@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+body {
+  background: #eee;
+}
+.login-form, .signup-form {
+  width: 500px;
+  background: #ffffff;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+  padding: 25px;
+}
+.login-form {
+  transform: translate(-50%,-50%);
+  height: 350px;
+}
+.login-form  h3, .signup-form h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #DF59A5;
+}
+.login-form form,.signup-form form {
+  position: relative;
+}
+.linkToSingup {
+  position: relative;
+  top: -80px;
+}
+.login-form form div,.signup-form form div {
+ display: grid;
+ grid-template-columns: .8fr 2fr;
+ grid-gap: 20px;
+margin-top: 50px;
+}
+.login-form form div label,.signup-form form div  label {
+  text-align: right;
+  color: #333333;
+  font-size: 15px;
+}
+.login-form form div input,.signup-form form div  input {
+  padding: 2px;
+  font-size: 18px;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid #333333;
+} 
+.login-form form  button,.signup-form form  button {
+  width: 100px;
+  height: 40px;
+  background: #DF59A5;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.75;
+  position: absolute;
+  margin-top: 50px;
+  right: 15px;
+}
+.err, .suss {
+  position: relative;
+  top: 30px;
+  color:#d63031;
+  text-align: center;
+}
+.suss {
+  color: aquamarine;
+  text-align: center;
+}
+.signup-form form  button {
+  width: 200px;
+}
+
+.errTxt {
+  text-align: center;
+  color: #d63031;
+  position: relative;
+  top: 50px;
+}
+.login-form form  button:hover,.signup-form form div  button:hover{
+ opacity: 1;
+}
+.login-form> div,.signup-form> div {
+ font-size: 18px;
+ text-align: center;
+ margin-top: 200px;
+}
+.signup-form> div {
+  margin-top: 130px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #DF59A5;
+  height: 80px;
+  line-height: 80px;
+}
+nav> div {
+  font-size: 30px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+  font-size: 18px;
+}
+.username {
+  font-size: 20px;
+  color: #ffffff;
+}
+.list-container {
+  position: relative;
+  display: block;
+  width: 500px;
+ margin: auto;
+ margin-top: 50px;
+}
+.lists {
+  width: 100px;
+  height: 50px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  color: #DF59A5;
+  font-size: 18px;
+  font-weight: 650;
+}
+.addShowBtn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1;
+  font-size: 25px;
+  color: #DF59A5;
+  cursor: pointer;
+}
+.addlist-form {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 350px;
+  height: 200px;
+  padding: 15px;
+  background: #fff;
+}
+.addlist-form h3 {
+  color: #DF59A5;
+  margin-bottom: 15px;
+}
+.addlist-form div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 15px;
+}
+.addlist-form div input {
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #333333;
+}
+.addlist-form button {
+  background: #fff;
+  border: none;
+  box-shadow:  0 0 3px #333333;
+  cursor: pointer;
+  height: 35px;
+}
+.main_context {
+  margin-top: 25px;
+}
+.header {
+  background: #DF59A5;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header form {
+  display: inline;
+  margin-left: 15px;
+}
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.showContextBtn {
+  font-size: 25px;
+  cursor: pointer;
+}
+.main_context {
+  margin-top: 25px;
+}
+.contextActive {
+  background: #fff;
+  min-height: 200px;
+  padding: 25px;
+}
+.contextNotAcitve {
+  display: none;
+}
